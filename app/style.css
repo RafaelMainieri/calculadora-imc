@@ -1,1 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
+html {
+  font-size: 62.5%;
+  font-family: 'Montserrat', sans-serif;
+  color: #E9ECEF;
+  background-color: #212529;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  
+}
+
+main {
+  display: flex;
+  flex-flow: column;
+  width: 35rem;
+  gap: 3rem;
+  margin: 5rem auto;
+  
+}
+
+#formulario {
+  /* width: 30rem; */
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+
+  & .caixa-input {
+    display: flex;
+    flex-flow: column;
+    gap: 0.5rem;
+    font-size: 1.6rem;
+
+    & input {
+      font-family: inherit;
+      padding: 1rem 0.75rem;
+      border-radius: 0.5rem;
+      color: #E9ECEF;
+      border: 1px solid #48CAE4;
+      box-shadow: 0 0 1rem 0.2rem rgba(72, 202, 228, 0.1);
+      background-color: inherit;
+      outline: none;
+      
+      &::placeholder {
+        color: #6C757D;
+      }
+    }
+  }
+
+  & button {
+    background-color: #0096C7;
+    color: #E9ECEF;
+    border: none;
+    font-family: inherit;
+    font-weight: 600;
+    border-radius: 0.75rem;
+    padding: 1rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+    outline: none; 
+
+    &:hover {
+      background-color: #48CAE4;
+    }
+  }
+}
+
+
+
+
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
