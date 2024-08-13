@@ -9,19 +9,13 @@ html {
   font-family: 'Montserrat', sans-serif;
   color: #E9ECEF;
   background-color: #212529;
-  height: 100%;
-}
-
-body {
-  height: 100%;
-  
 }
 
 main {
   display: flex;
   flex-flow: column;
-  width: 35rem;
-  gap: 3rem;
+  width: 40rem;
+  gap: 4rem;
   margin: 5rem auto;
   
 }
@@ -43,19 +37,22 @@ main {
       padding: 1rem 0.75rem;
       border-radius: 0.5rem;
       color: #E9ECEF;
-      border: 1px solid #48CAE4;
-      box-shadow: 0 0 1rem 0.2rem rgba(72, 202, 228, 0.1);
-      background-color: inherit;
-      outline: none;
-      
+      background-color: #343A40;
+      border: none;
+      /* border: 1px solid #48CAE4; */
+      box-shadow: 0 0 1rem 0.2rem rgba(0, 0, 0, 0.1);
+      /* outline-color: #48CAE4; */
+
       &::placeholder {
+        font-size: 1.4rem;
         color: #6C757D;
       }
     }
   }
 
   & button {
-    background-color: #0096C7;
+    /* background-color: #0096C7; */
+    background-color: #343A40;
     color: #E9ECEF;
     border: none;
     font-family: inherit;
@@ -65,13 +62,82 @@ main {
     font-size: 1.8rem;
     cursor: pointer;
     outline: none; 
+    box-shadow: 0 0 1rem 0.5rem rgba(0, 0,0, 0.1);
 
     &:hover {
-      background-color: #48CAE4;
+      background-color: #495057;
     }
   }
 }
 
+#container-resultados {
+  display: flex;
+  flex-flow: column;
+  gap: 0.5rem;
+  font-size: 1.3rem;
+
+  & #linha1 {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    font-weight: 600;
+  }
+
+  & #linha2 {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+  }
+
+  & span {
+    width: 8.5rem;
+  }
+}
+
+#container-informacoes {
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-shadow: .75px .75px 0 #000;
+  border-radius: 2rem;
+  text-align: center;
+
+  & .linhas {
+    display: grid;
+    grid-template-columns: 16rem 17rem;
+    gap: 5rem;
+    padding: 0.5rem;
+  }
+
+  & #linha1 {
+    background-color: #43AA8B;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    margin-top: 1rem;
+  }
+  & #linha2 {
+    background-color: #90BE6D;
+  }
+  & #linha3 {
+    background-color: #F9C74F;
+  }
+  & #linha4 {
+    background-color: #F8961E;
+  }
+  & #linha5 {
+    background-color: #F3722C;
+  }
+  & #linha6 {
+    background-color: #c42d2f;
+  }
+  & #linha7 {
+    background-color: rgb(138, 36, 38);
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+}
 
 
 
