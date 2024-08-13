@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <form id="formulario" action="">
+        <div id="caixa-input-peso">
+          <label for="input-nome">Peso:</label>
+          <input type="number" placeholder="Insira seu peso (em kg)" id="input-nome">
+        </div>
+
+        <div>
+          <label for="input-altura">Altura:</label>
+          <input type="number" step="0.01" placeholder="Insira sua altura (em m)">
+        </div>
+
+        <button id="botao-calcular">Calcular</button>
+      </form>
+
+      <div id="container-resultados">
+        <div id="linha1">
+          <span>Peso</span>
+          <span>Altura</span>
+          <span>IMC</span>
+          <span>Resultado</span>
+        </div>
+
+        <hr>
+
+        <div id="linha2">
+          <span>valorPeso</span>
+          <span>valorAltura</span>
+          <span>valorIMC</span>
+          <span>valorResultado</span>
+        </div>
+      </div>
+
+      <div id="container-informacoes">
+        <div id="linha-titulo">
+          <span>IMC</span>
+          <span>Classificação</span>
+        </div>
+        <div id="linha1">
+          <span>Menos que 17</span>
+          <span>Muito abaixo do peso</span>
+        </div>
+
+        <div id="linha2">
+          <span>Entre 17 e 18,49</span>
+          <span>Abaixo do peso</span>
+        </div>
+
+        <div id="linha3">
+          <span>Entre 18,5 e 24,99</span>
+          <span>Peso normal</span>
+        </div>
+
+        <div id="linha4">
+          <span>Entre 25 e 29,99</span>
+          <span>Acima do peso</span>
+        </div>
+
+        <div id="linha5">
+          <span>Entre 30 e 34,99</span>
+          <span>Obesidade I</span>
+        </div>
+
+        <div id="linha6">
+          <span>Entre 35 e 39,99</span>
+          <span>Obesidade II (severa)</span>
+        </div>
+
+        <div id="linha7">
+          <span>Acima de 40</span>
+          <span>Obesidade III (mórbida)</span>
+        </div>
+      </div>
+    </main>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
