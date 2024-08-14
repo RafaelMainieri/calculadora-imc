@@ -9,14 +9,16 @@
   <body>
     <main>
       <form id="formulario" action="">
-        <div class="caixa-input">
-          <label for="input-nome">Peso:</label>
-          <input type="number" placeholder="Insira seu peso (em kg)" id="input-nome">
+        <div id="cx-input-peso" class="caixa-input">
+          <label for="input-peso">Peso:</label>
+          <input type="number" placeholder="Insira seu peso (em kg)" id="input-peso">
+          <span id="texto-erro">Por favor, insira seu peso</span>
         </div>
 
-        <div class="caixa-input">
+        <div id="cx-input-altura" class="caixa-input">
           <label for="input-altura">Altura:</label>
           <input type="number" step="0.01" placeholder="Insira sua altura (em m)" id="input-altura">
+          <span id="texto-erro">Por favor, insira sua altura</span>
         </div>
 
         <button id="botao-calcular">Calcular</button>
@@ -34,10 +36,10 @@
          <hr>
 
         <div id="linha2">
-          <span>100</span>
-          <span>1,89</span>
-          <span>22,8</span>
-          <span>Muito abaixo do peso</span>
+          <span id="respostaPeso">--</span>
+          <span id="respostaAltura">--</span>
+          <span id="respostaImc">--</span>
+          <span id="respostaResultado">--</span>
         </div>
       </div>
 

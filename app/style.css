@@ -48,6 +48,12 @@ main {
         color: #6C757D;
       }
     }
+
+    & span {
+      display: none;
+      font-size: 1.2rem;
+      color: #F94144;
+    }
   }
 
   & button {
@@ -112,28 +118,28 @@ main {
   }
 
   & #linha1 {
-    background-color: #43AA8B;
+    background-color: #4D908E;
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
     margin-top: 1rem;
   }
   & #linha2 {
-    background-color: #90BE6D;
+    background-color: #43AA8B;
   }
   & #linha3 {
-    background-color: #F9C74F;
+    background-color: #90BE6D;
   }
   & #linha4 {
-    background-color: #F8961E;
+    background-color: #F9C74F;
   }
   & #linha5 {
-    background-color: #F3722C;
+    background-color: #F8961E;
   }
   & #linha6 {
-    background-color: #c42d2f;
+    background-color: #F3722C;
   }
   & #linha7 {
-    background-color: rgb(138, 36, 38);
+    background-color: #c42d2f;
     border-bottom-left-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
   }
