@@ -11,7 +11,7 @@ botaoCalcular.addEventListener('click', function (event) {
   event.preventDefault();
 
   if (!isInputPreencheido()) {
-    alert('Preencha os dados corretamente!')
+    alert('Preencha todos os campos corretamente!')
   } else {
     calcularImc(inputPeso.value, inputAltura.value)
 

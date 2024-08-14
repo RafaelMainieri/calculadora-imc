@@ -5,18 +5,27 @@
 }
 
 html {
-  font-size: 62.5%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 80%;
+}
+
+body {
   font-family: 'Montserrat', sans-serif;
   color: #E9ECEF;
   background-color: #212529;
 }
+
 
 main {
   display: flex;
   flex-flow: column;
   width: 40rem;
   gap: 4rem;
-  margin: 5rem auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
   
 }
 
@@ -34,6 +43,7 @@ main {
 
     & input {
       font-family: inherit;
+      font-size: 1.3rem;
       padding: 1rem 0.75rem;
       border-radius: 0.5rem;
       color: #E9ECEF;
